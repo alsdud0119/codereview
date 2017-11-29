@@ -1,0 +1,25 @@
+package com.javalec.ex;
+
+public class Calculation {
+	
+	public void add(firstNum, secondNum) {
+		System.out.println("add");
+		resultCalcul(" + ",(firstNum + secondNum));
+	}
+	public void sub(firstNum, secondNum) {
+		System.out.println("sub");
+		resultCalcul(" - ",(firstNum - secondNum));
+	}
+	public void mul(firstNum, secondNum) {
+		System.out.println("mul");
+		resultCalcul(" * ",(firstNum * secondNum));
+	}
+	public void div(firstNum, secondNum) {
+		System.out.println("div");
+		resultCalcul(" / ",(firstNum / secondNum));
+	} 
+	
+	public void resultCalcul(String calculCase, int result) {
+		System.out.println(firstNum + calculCase + secondNum + " = " + result);
+	}
+}

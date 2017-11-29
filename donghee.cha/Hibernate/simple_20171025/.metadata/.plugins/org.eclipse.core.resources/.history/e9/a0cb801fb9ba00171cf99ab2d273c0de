@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean id="calculator" class="com.javalec.ex.Calculator"/>
+
+<bean id="myCalculator" class="com.javalec.ex.MyCalculator">
+	<property name="calculator">
+		<ref bean="calculator" />
+	</property>
+	<property name="firstNum" value="10"></property>
+	<property name="secondNum" value="10"></property>
+
+
+
+
+
+</bean>
