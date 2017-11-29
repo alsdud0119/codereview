@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017. 9. 8 ???? 2:35:56 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="net.hibernate.tutorial.model.User" table="USER">
+        <id name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </id>
+        <property name="tenant_id" type="java.lang.String">
+            <column name="TENANT_ID" />
+        </property>
+        <property name="LastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="FirstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="company" type="java.lang.String">
+            <column name="COMPANY" />
+        </property>
+    </class>
+</hibernate-mapping>
