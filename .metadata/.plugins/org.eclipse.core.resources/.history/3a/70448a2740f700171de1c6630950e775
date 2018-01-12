@@ -1,0 +1,5 @@
+package com.java.socket.udp;
+
+public class EchoClient {
+
+}

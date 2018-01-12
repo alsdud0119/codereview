@@ -1,0 +1,23 @@
+package com.java.socket.udp;
+
+import static org.junit.Assert.assertEquals;
+
+import java.net.SocketException;
+import java.net.UnknownHostException;
+
+public class UDPTest {
+	
+	public static void main(String[] args) {
+		
+		new EchoServer().start();
+		
+		EchoClient client = new EchoClient();
+		
+		// TODO Auto-generated method stub
+		String echo = client.sendEcho("hello server");
+		assertEquals("hello server", echo);
+		echo = client.sendEcho("server is working");
+		assertFalse(echo.equals("hello server"));
+	}
+
+}
