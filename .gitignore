@@ -1,9 +1,10 @@
 /bin/
 
+
 .settings
 .classpath
 .project
-.metadata
+/.metadata/
 /.recommenders/
 /RemoteSystemsTempFiles/
 /Servers/
