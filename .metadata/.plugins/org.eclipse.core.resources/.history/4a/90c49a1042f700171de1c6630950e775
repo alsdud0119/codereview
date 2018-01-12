@@ -1,0 +1,20 @@
+package com.java.socket.udp;
+
+import java.net.SocketException;
+
+public class UDPTest {
+	
+	EchoClient client;
+	
+	UDPTest() throws SocketException {
+		new EchoServer().start();
+		client  = new EchoClient();
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

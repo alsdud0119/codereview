@@ -1,0 +1,25 @@
+package com.java.socket.udp;
+
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+
+public class EchoClient {
+	
+	private DatagramSocket socket;
+	private InetAddress address;
+	
+	private byte[] buf;
+	
+	EchoClient() throws SocketException{
+		socket = new DatagramSocket();
+		address = InetAddress.getByName("localhost");
+	}
+	
+	public String sendEcho(String msg) {
+		buf = msg.getBytes();
+		
+	}
+	
+	
+
+}
