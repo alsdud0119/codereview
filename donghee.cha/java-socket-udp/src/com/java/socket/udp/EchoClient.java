@@ -9,6 +9,7 @@ import java.net.UnknownHostException;
 
 public class EchoClient {
 	
+	
 	private DatagramSocket socket;
 	private InetAddress address;
 	

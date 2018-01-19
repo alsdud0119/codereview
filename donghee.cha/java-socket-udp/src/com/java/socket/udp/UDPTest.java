@@ -24,6 +24,7 @@ public class UDPTest {
     @Test
     public void whenCanSendAndReceivePacket_thenCorrect() throws IOException {
     	
+    	
     	System.out.println("[clinet] send test hello server");
     	
         String echo = client.sendEcho("hello server");
